@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("user")
 public class UserController {
+
     @Autowired
     private IUserService userService;
 
+    public void add(){}
 
     @GetMapping("getById/{id}")
     public User getById(@PathVariable("id") Integer id){
